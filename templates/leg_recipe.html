@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link rel="stylesheet" type="text/css" href="{% static 'styling/skin.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   <title>Leg recipe</title>
+</head>
+<body>
+    <div>
+
+        <div id="main">
+            <nav>
+                
+            <ul>
+              <li><a href="/products/live">OUR PRODUCTS</a></li>
+              <li><a href="/products/cook">COOKING FACTS</a></li>
+              <li><a href="/products/recipe_info">RECIPES</a></li>
+              <li><a href="/products/carrer">CARRERS</a></li>
+              <li><a href="/products/story">OUR STORIES</a></li>
+         
+            </ul>
+            </nav>
+        </div>
+        <div>  
+    </div>
+
+    <div class="select"><h1>Selected Item </h1></div>
+    <div class="cont">
+        <div class="live">
+          <h1>Recipes featuring: Legs</h1>
+          <div class="container1">
+            {% for frozenproducts in frozengoods %}
+           <div class="gallery1">
+             <a ><img  src="{{ frozenproducts.img.url }}" alt=""></a>
+             <div class="dec1"><b>{{ frozenproducts.name }}</b><p class="price">${{ frozenproducts.price }}</p></div>
+             <!--<a href="#" class="btn btn-primary">order </a>-->
+             {% if frozenproducts.offer %}
+             <!--<p class="card-text">{{ breedproducts.offer }}</p>-->
+              <!--<div class="spe_offer_breed"><a href="#">Price drop</a></div>-->
+                 
+             {% endif%}
+           </div>
+           {% endfor %}</div></div>
+           
+    
+        <div class="rep"></div>
+          <div class="dinner">
+            <h1>Dinner in a Hurry</h1>
+            <p>Glazed Chicken</p>
+            <p>Fresh Green Paste for the Grill</p>
+            <p>Finity Farm BBQ Rub</p>
+           
+            
+          </div>
+          <div class="dinner_inn1">
+            <h1>Every Day Recipes</h1>
+            <p>One Pan Chicken and Veggie Roast</p>
+          </div>
+
+        
+         
+        </div>
+        </div>
+        </div>
+        <div class="recipe">
+         
+          <a href="/products/live"><h1>See all product</h1></a>
+        
+        </div> 
+
+
+        
+  <footer>
+    Finity Farm limited
+</footer>
+
+    </div>
+<div class="footer-main-div">
+    <div class="footer-social-icons">
+        <ul>
+            <li><a href="#" target="blank"><i class="fab fa-facebook-f"></i></li>
+            <li><a href="#" target="blank"><i class="fab fa-twitter"></i></li>
+            <li><a href="#" target="blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-google-plus-square"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-snapchat"></i></a></li>
+       
+        </ul>
+    </div>
+   
+    <div class="footer-menu-two">
+        <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-menu-three">
+        <ul>
+        <li><a href="">Distributors</a></li>
+        <li><a href="">Cooking Facts</a></li>
+        <li><a href="">Recipes</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Our Story</a></li>
+        <li><a href="">Services</a></li>
+        </ul>
+    </div>
+    <div class="phone">
+        <h3>(Monday to Saturday ,9am to 6pm)</h3>
+        <h2>+23424108205</h2>
+
+    </div>
+    <div class="address">
+        <h2>nuel4xelence@gmail.com</h2>
+        <h2>33 lord lugard street ikoyi,lagos nigeria</h2>
+        
+    </div>
+
+<div class="footer-bottom">
+<h1>developed by:</h1>
+<!--<h4>nuel4xelence@yahoo.com</h4>-->
+
+</div>
+</div>
+</body>
+</html>

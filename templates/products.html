@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% static "img" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+     
+</head>
+<body>
+    
+    
+    {% block content %}
+  
+    <div>
+    <h1>EVery item is here</h1>
+</div>
+
+    <h1>All product</h1>
+    <div class="row">
+        {% for allproducts in liveprod %}
+        <div class="col">
+            <div class="card" style="width: 240px; height:120px">
+                <img src="{{ allproducts.img.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ allproducts.name }}</h5>
+                  <p class="card-text"> ${{ allproducts.price }}</p>
+                 
+                  {% if allproducts.offer %}
+            <h4>Special Offer</h4>
+            {% endif %}
+
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+        </div>
+        {% endfor %}
+    </div>
+   
+   <h2>Frozen Products</h2>
+   <div class="roww">
+    {% for frozenproducts in frozy %}
+       <div class="col1">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ frozenproducts.img.url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ frozenproducts.name }}</h5>
+              <p class="card-text"> ${{ frozenproducts.price }}</p>
+             
+              {% if frozenproducts.offer %}
+            <h4>Special Offer</h4> </li>
+            {% endif %}
+             <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+       </div>
+       {% endfor %}
+   </div>
+
+   <h2>Breed Products</h2>
+   <div class="rowww">
+    {% for breedproducts in breed %}
+       <div class="colll">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ breedproducts.img.url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ breedproducts.name }}</h5>
+              <p class="card-text"> ${{ breedproducts.price }}</p>
+              {% if breedproducts.offer %}
+            <h4>Special Offer</h4> </li>
+            {% endif %} 
+            <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+       </div>
+       {% endfor %}
+   </div>
+<div class="footer">
+  <h2>welcome</h2>
+</div>
+    {% endblock %}
+    
+</body>
+</html>

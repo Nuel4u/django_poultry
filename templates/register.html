@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'scc.css' %}">
+
+</head>
+<body>
+	<form action="register" method="post">
+        {% csrf_token %}
+
+<div class="login-box">
+	<h1>Register</h1>
+	
+	<div>
+		
+		<input type="text" placeholder="first name" name="fname" value="">
+	</div>
+	<div>
+		<input type="text" placeholder="Last name" name="lname" value="">
+	</div>
+	<div class="textbox">
+		<i class="fa fa-user" aria-hidden="true"></i>
+		<input type="text" placeholder="Username" name="Username" value="">
+	</div>
+	
+	<div class="textbox">
+		<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+		<input type="text" placeholder="Password"  name="Password" value=""><br>
+		
+		<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+		<input type="text" placeholder="Confirm Password"  name="cpassword" value="">
+	</div>
+	<div>
+		<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		<input type="text" placeholder="Email" name="mail" value="">
+	</div>
+	<input class="btn" type="submit" name="submit" value="Sign in">
+</div>
+
+</form>
+<div>
+	{% for mess in messages %}
+	<h1 style="background-color: green;">{{mess}}</h1>
+	{% endfor %}
+</div>
+
+
+<!--<div class="login-container">
+	<form action="register" method="post">
+		<img src="wnjy.png">
+		<h2>Welcome</h2>
+		<div class="input-div">
+			<div class="i">
+				<i class="fas fa-user"></i>
+				</div>
+		<div>
+					<h1>Username</h1></div>
+					
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input class="input" type="text" placeholder="User name">
+				</div>
+				<div class="input-div">
+					<div class="i">
+						<i class="fas fa-user"></i>
+						</div>
+						<div>
+							<h1>password</h1>
+							<input class="input" type="password" placeholder="passowrd">
+						</div>
+						<div>
+						<a href="">Forgot password?</a>
+					</div>
+						<input type="submit" class="btn" value="login">
+
+	</form>
+	</div>
+
+	<script type="text/javascript" src="js/main.js">
+
+	</script>
+</div>-->
+
+
+
+
+
+
+
+	<!--<form action="register" method="post">
+        {% csrf_token %}
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(static/staticc/images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
+
+				<form class="login100-form validate-form">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="first_name" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+</form>-->
+</body>
+</html>

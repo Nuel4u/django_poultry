@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+
+     <!-- Core Stylesheet -->
+     <link rel="stylesheet" href="{% static 'scc.css' %}">
+</head>
+<body>
+    
+    <div>
+    
+
+    <div class="login-box">
+        <img src="{% static 'img/bg-img/icon1.gif' %}" class="avater" alt="">
+        <h1> Login Here </h1>
+
+        <form action="login" method="POST">
+        {% csrf_token %}
+        <p> Username </p>
+        <input type="text" name="username" placeholder="Enter Username">
+        <p> Password </p>
+        <input type="password" name="password" placeholder=" Enter password">
+        <input type="submit" name="submit" value="Login">
+        <a href=""> Forgot Password? </a>
+
+    </div>
+    </form>
+    </div>
+
+    <div>
+        {% for mess in messages %}
+	<h1>{{mess}}</h1>
+	{% endfor %}
+    </div>
+</body>
+</html>

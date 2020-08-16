@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(224, 175, 175, 0.01) 0 0 1px;
+    
+}
+
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    line-height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+}
+nav ul li:hover{
+    background-color: #f39d1a;
+}
+nav ul li a{
+    text-decoration: none;
+    color: green;
+    padding: 30px;
+}
+
+.our h1{
+    margin-top: 40px;
+    background: green;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+    font-size: 40px;
+    color: ghostwhite;
+    height: 70px;
+    text-transform: uppercase;
+
+}
+
+.story{
+    margin-top: 40px;
+    padding-left: 130px;
+    padding-right: 130PX;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.story_info{
+    margin-top: 30px;
+}
+.story_info p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.story_info h1{
+    margin-top: 20px;
+    font-size: 15px;
+    color: green;
+}
+
+footer{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: #32cd32;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    letter-spacing: 1px;
+    margin-top: 40px;
+
+}
+
+.footer-main-div{
+    width: auto;
+    height: 218px;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+    margin-bottom: 0px;
+    
+}
+.footer-main-div a{
+    text-decoration: none;
+    outline: none;
+    
+}
+
+.footer-social-icons{
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-left: 280px;
+
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #32cd32;
+}
+.footer-social-icons ul li a{
+    color: #272727;
+    font-size: 25px;
+    display: block;
+}
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+.footer-social-icons ul li:hover{
+    background: red;
+}
+
+.footer-menu-two{
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 280px;
+}
+.footer-menu-two ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-two li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+.footer-menu-two ul li a{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-menu-two ul li a:hover{
+    color: #32cd32;
+}
+
+.footer-menu-three{
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 280px;
+}
+.footer-menu-three ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-three li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+.footer-menu-three ul li a{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-menu-three ul li a:hover{
+    color: #32CD32;
+}
+.phone h3 {
+    color:ghostwhite;
+    margin-left: 30px;
+    top: -120px;
+    position: relative;
+    
+}
+.phone h2{
+    color:ghostwhite;
+    margin-left: 30px;
+    top: -120px;
+    position: relative;
+    
+}
+.address h2{
+    margin-top: 5px;
+    color: ghostwhite;
+    font-size: 18px;
+    position: relative;
+    padding-left: 10px;
+    top: -110px;
+    
+}
+
+.footer-bottom h1{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: #32cd32;
+    text-align: left;
+    color: white;
+    font-family: Arial;
+    letter-spacing: 1px;
+    margin-top: -30px;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width:767px){
+    .sm-mb-30{
+        margin-bottom: 30px;
+    }
+    .footer-top{
+        padding: 50px 0;
+    }
+}
+
+
+
+@media screen and (min-width:768px){
+
+    .display-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    
+    
+    .display-grid div{
+        padding: 0 .5rem;
+    }
+
+}
